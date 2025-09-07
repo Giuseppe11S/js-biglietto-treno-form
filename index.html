@@ -10,45 +10,52 @@
 
 <section>
 
-  <div class="ly-form">
+<!-- Ticket del treno in input -->
+<div class="cnt-inlayout">
     <div class="input-ly-form">
-
       <form action="" id="form-ticket">
 
+        <!-- Label per gli input -->
+        <div class="cnt-label">
+          <span>Inserisci i dati per acquistare il tuo biglietto: </span>
+        </div>
+
         <!-- Input per l'utente -->
-        <input  id="nameUser" type="text"  placeholder="Nome e Cognome">
-        <input  id="valueKm" type="text" placeholder="Km da percorrere">
+      <div class="cnt-input">
+          <input  id="nameUser" type="text"  placeholder="Nome e Cognome: " required>
+          <input  id="valueKm" type="text" placeholder="Km da percorrere: " required>
+          <input type="text" id="ageRange" placeholder="Età: " required>
+      </div>
 
+             <div class="cnt-btn">
+              <button type="submit" id="sub-btn" >Genera</button>
+              <button id="btn-reset" type="reset">
+                Reset
+              </button>
+            </div>
 
-            <!-- Input per l'utente -->
-             <input type="text" id="ageRange">
-
-        <button type="submit" id="sub-btn">Genera</button>
       </form>
-      
     </div>
  </div>
-
 </section>
-<div class="container-card">
 
-   <form id="ticket-output">
+ <!-- Ticket del treno in output -->
+<section>
+  <div class="cnt-outlayout">
+      <div class="output-ly-form">
+        <div class="cnt-input">
 
-    <p>Nome passeggero:</p>
-      <p id="p-Name" style="background-color: brown;">
+          <span id="p-Name" 
+          class="ticket-output">
+          </span>
 
-      </p>
-      <p id="p-Km" style="background-color: brown;">
-
-      </p>
-      <p id="p-Age" style="background-color: brown;">
-
-      </p>
-      <p id="price-Ouput" style="background-color: brown;">
-
-      </p>
-   </form>
+          <span id="price-Output" 
+          class="ticket-output">
+          </span>
+        </div>
+      </div>
   </div>
+</section>
 
 <section>
 

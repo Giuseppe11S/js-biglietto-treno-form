@@ -1,12 +1,113 @@
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-
-.ly-form{
+/* Container input card */
+.cnt-inlayout {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
+
+/* container output card */
+.cnt-outlayout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Styilng del form */
+.input-ly-form , .output-ly-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 25vh;
+  background-color: #F3F5F7;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 51, 255, 0.748) ;
+}
+
+.cnt-input {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.bg-top {
+  background-color: red;
+  height: 5%;
+}
+
+::placeholder {
+  text-align: start; 
+  padding: 5px;
+  color: rgba(128, 128, 128, 0.582);
+}
+
+input:last-child {
+  width: 50px;
+}
+
+input:last-child::placeholder {
+  padding: 0px;
+}
+
+.cnt-label {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.cnt-label span {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.798);
+}
+
+.cnt-label label:nth-child(2) {
+  flex: 1;
+  text-align: center;
+}
+
+.cnt-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#sub-btn, #btn-reset {
+  background-color: rgba(0, 51, 255, 0.748);
+  color: white;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ticket-output {
+  color: white;
+  font-size: 12px;
+  margin: 5px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.output-ly-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.output-ly-form span {
+  color: black;
+  font-size: 20px;
+}
+
